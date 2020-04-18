@@ -1,0 +1,27 @@
+java_library {
+    name: "vendor.pa.biometrics.face.V1_0",
+    installable: true,
+
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.aidl",
+    ],
+    aidl: {
+        local_include_dirs: ["src"],
+    },
+}
+
+prebuilt_etc {
+    name: "paranoid_sense_perms",
+    sub_dir: "permissions",
+    src: "prebuilt/etc/permissions/android.hardware.biometrics.face.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "paranoid_sense_hiddenapi",
+    sub_dir: "sysconfig",
+    src: "prebuilt/etc/sysconfig/hiddenapi-whitelist-com.paranoid.facesense.xml",
+    filename_from_src: true,
+    product_specific: true,
+}
