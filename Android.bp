@@ -21,7 +21,7 @@ prebuilt_etc {
 prebuilt_etc {
     name: "paranoid_sense_hiddenapi",
     sub_dir: "sysconfig",
-    src: "prebuilt/etc/sysconfig/hiddenapi-whitelist-com.paranoid.facesense.xml",
+    src: "prebuilt/etc/sysconfig/hiddenapi-whitelist-co.aospa.facesense.xml",
     filename_from_src: true,
     product_specific: true,
 }
